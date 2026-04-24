@@ -2,18 +2,18 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
-// import About from './components/About';
+import About from './components/About';
 import Alert from './components/Alert';
 import React,{useState} from 'react';
 
-/*
+
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   Link
 }from "react-router-dom";
-*/
+
 
 //let name=<b>bhoomi</b>;
 //if i write let name="<b>bhoomi</b>" toh yeh bold nhi hoga ulta same cheej print kardega as external html
@@ -51,25 +51,25 @@ function App() {
   return (
     //jsx fragment for adding multiple elements
     <>
-      {/* <Router> */}
+       <Router> 
       <Navbar title="TextUtils" Abouttext='About' mode={mode} toggleMode={toggleMode}/>
       <Alert alert={alert}/>
       <div className="container my-3">
 
-      {/*
+      
       <Routes>
-         <Route exact path="/about" element={<About />} />
+         <Route exact path="/about" element={<About mode={mode} />} />
           <Route exact path="/" 
-          element={<TextForm showAlert={showAlert}  heading="Enter Text to Analyze Below" mode={mode}/>} />
+          element={<TextForm showAlert={showAlert}  heading="Try TextUtils-Word counter,Character counter,Remove Extra Spaces etc." mode={mode}/>} />
       </Routes>
-      */}
+      
 
        {/* <About/>*/}
 
-       <TextForm showAlert={showAlert} heading="Enter Text to Analyze Below" mode={mode}/>
+       {/* <TextForm showAlert={showAlert} heading="Enter Text to Analyze Below" mode={mode}/> */}
 
       </div>
-      {/* </Router> */}
+      </Router> 
       
     </>
   );

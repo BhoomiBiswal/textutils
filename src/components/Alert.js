@@ -8,10 +8,14 @@ function Alert(props) {
   return (
     //props.alert && means first one agar false hua toh rest nhi evaluate hoga
     //yeh kyuki all jsx get converted to js calls
-    props.alert && <div className={`alert alert-${props.alert.type} alert-dismissible fade show`} role="alert">
+    //props .alert in curly bracses kyuki ab yeh direct likhi gayi hai kisi tag ke andar nh hai 
+    <div style={{height:'50px'}}>
+      {props.alert && <div className={`alert alert-${props.alert.type} alert-dismissible fade show`} role="alert">
     <strong>{capitalize(props.alert.type)}</strong>:{props.alert.message}
     
+    </div>}
     </div>
+    
   )
 }
 

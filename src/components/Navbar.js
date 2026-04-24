@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types'
-//import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 //rfc also to inport react function based component
 export default function Navbar(props){
     return(
         <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
       <div className="container-fluid">
-        {/* <Link className="navbar-brand" to="/">{props.title}</Link> */}
-        <a className="navbar-brand" href="#">{props.title}</a>
+         <Link className="navbar-brand" to="/">{props.title}</Link> 
+        {/* <a className="navbar-brand" href="#">{props.title}</a> */}
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
           </button>
@@ -16,12 +16,12 @@ export default function Navbar(props){
             <li className="nav-item">
                 {/* ab jaise mujhe jome about pe navigate hona hai 
                 toh neeche unn dono ke code mein a aur href ki jagah link and to */}
-              {/*<Link className="nav-link active" aria-current="page" to="/">Home</Link>*/}
-              <a className="nav-link active" aria-current="page" href="#">Home</a>
+              <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+              {/* <a className="nav-link active" aria-current="page" href="#">Home</a> */}
             </li>
-            {/* <li className="nav-item">
+             <li className="nav-item">
               <Link className="nav-link" to="/about">{props.Abouttext}</Link>
-            </li> */}
+            </li> 
             </ul>
         {/*<form className="d-flex" role="search">
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
