@@ -22,7 +22,7 @@ let myStyle={
                             <h2 className='my-3'>About Us</h2>
                         <div className="accordion-item">
                         <h2 className="accordion-header">
-                            <button className="accordion-button" type="button" style={myStyle} data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <button className="accordion-button " type="button" style={myStyle} data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             <strong>Analyze Your Text</strong>
                             </button>
                         </h2>

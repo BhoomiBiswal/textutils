@@ -70,8 +70,9 @@ export default function TextForm(props){
    125 words in 1 min read*/}
     <div className="container my-3" style={{color:props.mode==='light'?'black':'white'}}>
         <h2>Your text summary</h2>
-        <p>{text.split(" ").filter(word => word !== "").length} words and {text.length} characters</p>
-        <p>{0.008*text.split(" ").filter(word => word !== "").length}Minutes read</p>
+        {/* by a space or by new line so /s=white space  */}
+        <p>{text.split(/\s+/).filter(word => word !== "").length} words and {text.length} characters</p>
+        <p>{0.008*text.split(/\s+/).filter(word => word !== "").length}Minutes read</p>
         <h3>Preview</h3>
         <p>{text.length>0?text:'Nothing to preview!'}</p>
     </div>

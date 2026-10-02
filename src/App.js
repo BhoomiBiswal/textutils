@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
@@ -35,6 +34,7 @@ function App() {
       setAlert(null);
     },1500)
   }
+  // cls is a class i am passing not using reverved word class 
   const toggleMode=()=>{
     if(mode==='light'){
       setMode('dark');

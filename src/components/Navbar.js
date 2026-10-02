@@ -23,10 +23,17 @@ export default function Navbar(props){
               <Link className="nav-link" to="/about">{props.Abouttext}</Link>
             </li> 
             </ul>
-        {/*<form className="d-flex" role="search">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-outline-success" type="submit">Search</button>
-      </form>*/}
+            {/* exercise 2 cutsom pallete 
+            de-flex is clas sin boot strap*/}
+            {/* in onclik we pass function not function call hence we ussed arrow func */}
+            {/* <div className="d-flex">
+              <div className="bg-primary rounded mx-2" onclick={()=>{props.toggleMode('primary')}}style={{height:'30px',width:'30px',cursor:'pointer'}}></div>
+              <div className="bg-danger rounded mx-2" onclick={()=>{props.toggleMode('danger')}}style={{height:'30px',width:'30px',cursor:'pointer'}}></div>
+              <div className="bg-success rounded mx-2" onclick={()=>{props.toggleMode('success')}}style={{height:'30px',width:'30px',cursor:'pointer'}}></div>
+              <div className="bg-warning rounded mx-2" onclick={()=>{props.toggleMode('warning')}}style={{height:'30px',width:'30px',cursor:'pointer'}}></div>
+
+
+            </div> */}
       <div className={`form-check form-switch text-${props.mode==='light'?'dark':'light'}`}>
         <input className="form-check-input" onClick={props.toggleMode} type="checkbox" role="switch" id="switchCheckDefault"/>
         <label className="form-check-label" htmlFor="switchCheckDefault">Enable Dark Mode</label>

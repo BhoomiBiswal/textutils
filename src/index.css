@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* in dark mode drop arrow visble hojayega */
+.accordion-button::after {
+  background-image: none !important;
+  content: "▼";   /* simple arrow */
+  font-size: 14px;
+  color: inherit; /* light/dark ke hisaab se auto */
+}
